@@ -1,12 +1,12 @@
 <details>
   <summary>Accordion 1</summary>
-  <p>…</p>
+  <p>Wooo this is one page</p>
 </details>
 
 <details open>
   <summary>Accordion 2</summary>
   <ul>
-    <li>…</li>
-    <li>…</li>
+    <p>This is another</p>
+    <button>adfdsfds</button>
   </ul>
 </details>

@@ -13,7 +13,7 @@
 /*chrome extension*/
 :global(body) {
     width: 350px;
-    height: 500px;
-    font-size: 16px;
+    height: 700px;
+    padding: 10px;
   }
 </style>
