@@ -10,10 +10,11 @@
   :global(*) {
     word-wrap: break-word;
   }
-/*chrome extension*/
+/*chrome extension Max sizes*/
 :global(body) {
     width: 350px;
-    height: 700px;
+    max-height: 700px;
     padding: 10px;
   }
+
 </style>

@@ -1,12 +1,23 @@
-<details>
-  <summary>Accordion 1</summary>
-  <p>Wooo this is one page</p>
-</details>
+<script>
+  import MainMenuComp from "./MainMenuComp.svelte";
+</script>
 
-<details open>
-  <summary>Accordion 2</summary>
+
+<nav>
   <ul>
-    <p>This is another</p>
-    <button>adfdsfds</button>
+    <li><strong>QA Tools</strong></li>
   </ul>
-</details>
+</nav>
+  <MainMenuComp prettyName="JSON Tools" name="JSONTools"></MainMenuComp>
+  <MainMenuComp prettyName="Bolt" name="Bolt"></MainMenuComp>
+
+<style>
+  .li{
+      margin: 30px;
+      padding: 590px;
+      align-self: center;
+  }
+
+</style>
+
+
