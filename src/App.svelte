@@ -4,8 +4,7 @@
   import routes from "virtual:generated-pages-svelte";
 </script>
 
-<Router {routes} />
-
+<Router {routes}  />
 <style>
   :global(*) {
     word-wrap: break-word;

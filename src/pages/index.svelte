@@ -1,21 +1,26 @@
 <script>
-  import MainMenuComp from "./MainMenuComp.svelte";
+  import MenuAccordionComp from "./MenuAccordionComp.svelte";
+  import JSONTools from "./JSONTools.svelte";
 </script>
-
-
-<nav>
-  <ul>
-    <li><strong>QA Tools</strong></li>
-  </ul>
-</nav>
-  <MainMenuComp prettyName="JSON Tools" name="JSONTools"></MainMenuComp>
-  <MainMenuComp prettyName="Bolt" name="Bolt"></MainMenuComp>
+<article data-theme="light">
+  <nav>
+      <p><strong>QA Tools</strong></p>
+    <hr class="solid">
+  </nav>
+    <MenuAccordionComp prettyName="JSON Tools" name="JSONTools" component={JSONTools}></MenuAccordionComp>
+    <MenuAccordionComp prettyName="Bolt" name="Bolt"></MenuAccordionComp>
+    <MenuAccordionComp prettyName="Test" name="Test"></MenuAccordionComp>
+</article>
 
 <style>
-  .li{
-      margin: 30px;
-      padding: 590px;
-      align-self: center;
+  nav
+  {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+      border-bottom: rgb(32, 33, 36) 2px solid;
   }
 
 </style>
