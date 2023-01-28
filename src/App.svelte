@@ -6,6 +6,7 @@
 
 <Router {routes}  />
 <style>
+
   :global(*) {
     word-wrap: break-word;
   }
@@ -14,6 +15,10 @@
     width: 350px;
     max-height: 700px;
     padding: 10px;
+    --form-element-active-border-color: var(--primary);
+    --form-element-focus-color: var(--primary-focus);
+    --switch-color: var(--primary-inverse);
+    --switch-checked-background-color: var(--primary);
   }
 
 </style>

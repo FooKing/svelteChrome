@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "description": "This is for testing",
+  "name": "Qa Toolkit",
+  "description": "Qa Tools Test",
   "version": "0.0.1",
   "manifest_version": 3,
   "action": {
@@ -8,5 +8,18 @@
   },
   "icons": {
     "128": "icon.png"
-  }
+  },
+  "permissions": ["clipboardRead", "clipboardWrite", "tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }]
 }
